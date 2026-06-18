@@ -3,7 +3,7 @@ import { getAPIKey } from "../api/auth.js";
 
 describe("getAPIKey", () => {
   test.each([
-    [{}, "abc"],
+    [{}, null],
     [{ authorization: undefined }, null],
     [{ authorization: "" }, null],
     [{ authorization: "Bearer abc123" }, null],
